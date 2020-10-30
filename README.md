@@ -1,6 +1,8 @@
 # tmpl_postgis
 
-Submodule for configuring and running postgis
+Submodule for configuring and running a .NET nano server
+
+!!!warning windows based image!!!
 
 ### 1. Ensure that the global repo is available
 The global repo is a submodule that provides global functionality.  It is typically called **sub_global**
