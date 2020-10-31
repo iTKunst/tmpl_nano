@@ -1,7 +1,5 @@
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
-USER root
-
 EXPOSE 5432
 
 ARG HOST_DIR
