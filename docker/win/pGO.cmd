@@ -40,7 +40,6 @@ docker run ^
        -p %HOST%:%PORT_EXT%:%PORT_INT% ^
        --label=%LABEL% ^
        --name=%CONT% ^
-       --network=%NET% ^
        %IMG%
 
 call LOG_EXIT pGO
