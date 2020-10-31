@@ -9,5 +9,6 @@ ARG CONT_DIR
 
 
 RUN echo HOST_DIR is %HOST_DIR%
+RUN echo CONT_DIR is $CONT_DIR
+RUN echo CONT_DIR is ${CONT_DIR}
 
-ENTRYPOINT ("cmd.exe")
