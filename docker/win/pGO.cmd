@@ -19,8 +19,6 @@ SET "USER=%PROJ_USER%"
 SET "VOL=%PROJ_VOL%"
 SET "VOL_DIR=%PROJ_VOL_DIR%"
 
-SET "DB_NAME=%PROJ_DB_NAME%"
-
 
 call LOG_VAR CONT %CONT%
 call LOG_VAR CONT_DIR %CONT_DIR%
@@ -36,16 +34,10 @@ call LOG_VAR USER %USER%
 call LOG_VAR VOL %VOL%
 call LOG_VAR VOL_DIR %VOL_DIR%
 
-call LOG_VAR DB_NAME %DB_NAME%
-
 
 docker run ^
        -d ^
        -p %HOST%:%PORT_EXT%:%PORT_INT% ^
-       -e POSTGRES_DB=%DB_NAME% ^
-       -e POSTGRES_USER=%USER% ^
-       -e POSTGRES_PASSWORD=%PASSWORD% ^
-       --mount type=volume,src=%VOL%,dst=%VOL_DIR% ^
        --label=%LABEL% ^
        --name=%CONT% ^
        --network=%NET% ^
