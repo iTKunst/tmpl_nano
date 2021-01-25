@@ -4,7 +4,7 @@
 
 log_enter /$DIR_TMPL/init
 
-source ./$DIR_PROJ/docker/init.sh
-source ./$DIR_PROJ/env/init.sh
+source ./$DIR_TMPL/docker/init.sh
+source ./$DIR_TMPL/env/init.sh
 
-log_exit /$DIR_PROJ/init
+log_exit /$DIR_TMPL/init
